@@ -16,10 +16,9 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib git hxcpp https://github.com/AlafandyPorting/hxcpp --quiet
-          haxelib install lime 8.0.1 --quiet
+          haxelib git https://github.com/HomuHomu833-haxe-stuff/lime --quiet
           haxelib install openfl 9.2.1 --quiet
-          haxelib --never install flixel 5.2.2 --quiet
-          haxelib run lime setup flixel --quiet
+          haxelib --never git https://github.com/Prohack101010/flixel-5.8.0-fixed --quiet
           haxelib install flixel-tools --quiet
           haxelib install flixel-ui --quiet
           haxelib install flixel-addons 3.0.2 --quiet
@@ -27,7 +26,7 @@ jobs:
           haxelib install hxjsonast --quiet
           haxelib install hscript --quiet
           haxelib install hxCodec 2.6.1 --quiet
-          haxelib git linc_luajit https://github.com/superpowers04/linc_luajit.git --quiet
+          haxelib git linc_luajit https://github.com/th2l-devs/linc_luajit --quiet
           haxelib install hxcpp-debug-server --quiet
           haxelib install mobile-controls --quiet
           haxelib list
