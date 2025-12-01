@@ -102,7 +102,7 @@
 	<assets path="assets/fonts" embed='true'/>
 	<!-- _______________________________ Libraries ______________________________ -->
 
-	<haxelib name="flixel" version="5.2.2" />
+	<haxelib name="flixel" />
 	<haxedev set='webgl' />
 
 	<!--In case you want to use the addons package-->
@@ -113,7 +113,7 @@
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
 	<haxelib name="linc_luajit" if="LUA_ALLOWED"/>
-	<haxelib name="hxCodec" if="VIDEOS_ALLOWED" /> <!--this version could be wrong but it works-->
+	<haxelib name="hxCodec" if="VIDEOS_ALLOWED"/> <!--this version could be wrong but it works-->
 	<haxelib name="mobile-controls" />
 	<haxelib name="faxe" if='switch'/>
 	<!--<haxelib name="polymod"/> -->
