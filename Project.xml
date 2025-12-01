@@ -106,15 +106,15 @@
 	<haxedev set='webgl' />
 
 	<!--In case you want to use the addons package-->
-	<haxelib name="flixel-addons" version="3.0.2" /> <!--this version could be wrong but it works-->
+	<haxelib name="flixel-addons" /> <!--this version could be wrong but it works-->
 	<haxelib name="hscript" />
 	<define name="hscriptPos" />
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
 	<haxelib name="linc_luajit" if="LUA_ALLOWED"/>
-	<haxelib name="hxCodec" version="2.6.1" if="VIDEOS_ALLOWED" /> <!--this version could be wrong but it works-->
-	<haxelib name="extension-androidtools" if="android"/>
+	<haxelib name="hxCodec" if="VIDEOS_ALLOWED" /> <!--this version could be wrong but it works-->
+	<haxelib name="mobile-controls" />
 	<haxelib name="faxe" if='switch'/>
 	<!--<haxelib name="polymod"/> -->
 	<haxelib name="discord_rpc" if="desktop"/>
@@ -168,12 +168,6 @@
 	<haxedef name="HXCPP_STACK_TRACE"/>
 	<haxedef name="HXCPP_CHECK_POINTER"/>
 	<haxedef name="HXCPP_STACK_LINE"/>
-
-        <config:android gradle-version="7.5.1" />
-        <config:android gradle-plugin="7.3.1" />
-
-	<android permission="android.permission.CAPTURE_AUDIO_OUTPUT"/>
-	<android target-sdk-version="29" if="android"/>
 
 	
 	<!-- _________________________________ Custom _______________________________ -->
