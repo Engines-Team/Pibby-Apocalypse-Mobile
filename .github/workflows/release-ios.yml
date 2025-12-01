@@ -15,7 +15,7 @@ jobs:
       - name: Install Libraries
         run: |
           haxelib setup ~/haxelib
-          haxelib git hxcpp hxcpp https://github.com/AlafandyPorting/hxcpp-0.7.3 --quiet
+          haxelib git hxcpp https://github.com/AlafandyPorting/hxcpp-0.7.3 --quiet
           haxelib git lime https://github.com/HomuHomu833-haxe-stuff/lime --quiet
           haxelib install openfl 9.2.1 --quiet
           haxelib --never flixel git https://github.com/Prohack101010/flixel-5.8.0-fixed --quiet
