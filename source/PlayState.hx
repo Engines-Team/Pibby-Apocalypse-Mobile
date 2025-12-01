@@ -100,6 +100,34 @@ class PlayState extends MusicBeatState
 
 	var canShakeNote:Bool; // fix for CAWM
 
+	public var mobilePad:MobilePad;
+	public var joyStick:JoyStick;
+	public var hitbox:Hitbox;
+
+	// MobilePad
+    mobilePad = new MobilePad('Test', 'Test');
+    var mobilePadCam:FlxCamera = new FlxCamera();
+    mobilePadCam.bgColor.alpha = 0;
+    FlxG.cameras.add(mobilePadCam, false);
+    mobilePad.buttonCameras = [mobilePadCam];
+    add(mobilePad);
+
+    // Hitbox
+    hitbox = new Hitbox('Test');
+    var hitboxCam = new FlxCamera();
+    hitboxCam.bgColor.alpha = 0;
+    FlxG.cameras.add(hitboxCam, false);
+    hitbox.buttonCameras = [hitboxCam];
+    add(hitbox);
+
+    // JoyStick
+    joyStick = new JoyStick(0, 0, 0, 0.25, 0.7); //Params: x, y, radius, ease, size
+    var joyStickCam = new FlxCamera();
+    joyStickCam.bgColor.alpha = 0;
+    FlxG.cameras.add(joyStickCam, false);
+    joyStick.cameras = [joyStickCam];
+    add(joyStick);
+
   //if (ClientPrefs.shaders){
 	var crtFNF:FlxRuntimeShader;
 	var mawFNF:Shaders.MAWVHS;

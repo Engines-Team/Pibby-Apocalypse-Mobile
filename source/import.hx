@@ -2,3 +2,4 @@
 import Paths;
 import Highscore;
 #end
+import mobile.*;
