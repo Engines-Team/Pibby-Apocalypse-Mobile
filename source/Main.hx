@@ -34,6 +34,8 @@ import openfl.Assets;
 
 using StringTools;
 
+import mobile.MobileConfig;
+	
 class Main extends Sprite
 {
 	var sprite:FlxSprite;
@@ -49,6 +51,20 @@ class Main extends Sprite
     var buildDate:TextField;
 
     public static var debug:Bool = #if debug true #else false #end;
+
+	static function main():Void {
+		MobileConfig.init('MobileControls', 'ArkoseLabs/HaxeTale', 'mobile/',
+			[
+				'MobilePad/DPadModes',
+				'MobilePad/ActionModes',
+				'Hitbox/HitboxModes',
+			], [
+				DPAD,
+				ACTION,
+				HITBOX
+			]
+		);
+	}
 
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
